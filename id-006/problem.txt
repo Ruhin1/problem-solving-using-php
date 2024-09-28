@@ -1,0 +1,39 @@
+**Issue ID: 006 - File Upload System**
+
+### Problem Description:
+
+Build a **file upload system** using PHP and MySQL. This system will allow users to upload files, store files in specific folders on the server, and store information about files in the database and list the uploaded files as needed.
+
+### Requirements:
+1. **File Upload:**
+ - Users can upload PDF, image or any other type of file to a specific folder on the server.
+ - File size cannot exceed 5 MB and only certain file types (eg PDF, JPEG, PNG) must be allowed to upload.
+
+2. **Database Tables:**
+ - The file name, size, and upload date must be stored in the database.
+ - Database fields will be: `id`, `file_name`, `file_size`, `uploaded_at`.
+
+3. **File Listing:**
+ - All files uploaded via a GET request must display the name, size, and upload date.
+
+4. **Error Handling:**
+ - If an incorrect file type or size is uploaded, a correct error message should be returned.
+ - If there is no file in the database, "No file found" message should be displayed.
+
+### Example:
+1. **POST Request:**
+ - User will upload a file (eg `document.pdf`).
+
+2. **GET Request:**
+ - The system will display the uploaded files as below:
+ ```json
+ {
+ "status": "success",
+ "files": [
+ {"id": 1, "file_name": "document.pdf", "file_size": "1.5MB", "uploaded_at": "2024-09-24 12:00:00"}
+ ]
+ }
+ ````
+
+**Optional Challenge:**
+- Add a feature where users can delete a file by file ID, which will delete the file from the server and also delete that information from the database.

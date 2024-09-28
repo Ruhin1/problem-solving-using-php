@@ -1,0 +1,63 @@
+### Problem ID: 002 (Backend Development)
+
+#### Problem: **User Registration API**
+
+Create a simple user registration system using PHP. The system should allow users to register by providing their `username`, `email`, and `password`. The system should store the user's data in a **MySQL database**.
+
+#### Requirements:
+
+1. **Create a POST endpoint** `/register` which:
+   - Takes `username`, `email`, and `password` as JSON input.
+   - Hashes the password using PHP’s `password_hash()` function.
+   - Stores the user data (`username`, `email`, `password_hash`) in a MySQL database.
+
+2. **Database Table**: Create a `users` table with the following fields:
+   - `id`: Primary key (Auto-incremented).
+   - `username`: Unique, not null.
+   - `email`: Unique, not null.
+   - `password`: Not null.
+
+3. **Validation**:
+   - Check if `username` and `email` are unique. If either already exists in the database, return an error message.
+   - Ensure that the password is at least 6 characters long.
+
+4. **Response**:
+   - If registration is successful, return a success message like `"User registered successfully"`.
+   - If there’s an error (e.g., username or email already exists, validation failure), return an appropriate error message.
+
+#### Input Example:
+
+```json
+{
+    "username": "johndoe",
+    "email": "johndoe@example.com",
+    "password": "password123"
+}
+```
+
+#### Output Example:
+
+- **Success**:
+  ```json
+  {
+      "message": "User registered successfully"
+  }
+  ```
+
+- **Error** (if email or username already exists):
+  ```json
+  {
+      "error": "Username or email already exists"
+  }
+  ```
+
+- **Error** (if password is too short):
+  ```json
+  {
+      "error": "Password must be at least 6 characters long"
+  }
+  ```
+
+---
+
+Once you solve this, let me know, and I’ll provide the next problem!

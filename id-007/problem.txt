@@ -1,0 +1,25 @@
+Problem ID: 007 - Product Inventory Management System (OOP)
+
+Problem Description:
+A product inventory management system needs to be developed which will store product information, add products, update product stock and display product information. This system should be developed in a completely object oriented manner.
+
+Required Tasks:
+Create a Product class that will hold the information required for a product. For example:
+
+Product ID (ID)
+Product Name
+Product Price
+Product Stock
+Create the Inventory class that will act as an inventory management system. Here multiple products can be added to the inventory and their stock can be updated and deleted.
+
+Functionality:
+
+Adding a new product (addProduct)
+Update Stock of Product (updateStock)
+Show Product Details (showProductDetails)
+Remove Product (removeProduct)
+Instructions:
+Initialize the basic information for the product using the Constructor.
+Create Getter and Setter methods to update or retrieve product information.
+Keep product properties private using encapsulation.
+All product management activities will be handled through the Inventory class.

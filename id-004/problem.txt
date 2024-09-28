@@ -1,0 +1,26 @@
+### Issue ID: 004 - **User Authentication API**
+
+**Problem Description:**
+An API needs to be created that will handle the user authentication system. This API will work for user registration, login and logout. It requires users to use JWT (JSON Web Token) to login securely.
+
+### Troubleshooting Steps:
+1. **User Registration:**
+ User will register with his name, email and password. The password will be stored in the database as a hash.
+
+2. **User Login:**
+ User will login with email and password. Upon successful authentication will return a JWT token that will be used in every secured API request.
+
+3. **User Logout:**
+ There will be a logout option that will log the user out of the system and invalidate their JWT token.
+
+### Input:
+- POST request for registration (email, name, password).
+- POST request for login (email and password).
+- POST request (JWT token) for logout.
+
+### Output:
+- Will return a message after successful registration.
+- Will return JWT token after proper login.
+- Returns a message if the logout is successful.
+
+By solving this you will improve your skills with **backend authentication** and **JWT token management**.

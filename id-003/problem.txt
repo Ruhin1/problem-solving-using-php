@@ -1,0 +1,48 @@
+**Problem ID: 003 - Content Management System (CMS) Basic CRUD**
+
+**Problem:**
+
+For a content management system (CMS), you need to create a simple article management application, where you can add, edit, delete, and view articles. You need to create four API endpoints, which are as follows:
+
+1. **GET /articles**
+ - Show all articles in a list form.
+
+2. **POST /articles**
+ - Will input data to add a new article. Input will be `title`, `content`.
+
+3. **PUT /articles/{id}**
+ - Will take input to update an article according to specified id. Input will be `title`, `content`.
+
+4. **DELETE /articles/{id}**
+ - Will delete articles according to specified id.
+
+**Instructions:**
+- Create a MySQL database to store the articles. The table can be named `articles` and contain the fields `id`, `title`, `content`, and `created_at` (where `created_at` stores the time).
+- Connect to database using PDO.
+- Write appropriate logic for each endpoint.
+
+**API Call Example:**
+
+- **GET /articles:**
+ If you call the `GET /articles` endpoint in Postman, it will return all articles in JSON format.
+
+- **POST /articles:**
+ When calling `POST /articles` in Postman, input JSON as the body:
+ ```json
+ {
+ "title": "My First Article",
+ "content": "This is the content of the article."
+ }
+ ````
+
+- **PUT /articles/1:**
+ When calling `PUT /articles/1` in Postman, input JSON as body:
+ ```json
+ {
+ "title": "Updated Title",
+ "content": "Updated content of the article."
+ }
+ ````
+
+- **DELETE /articles/1:**
+ Calling `DELETE /articles/1` in Postman will delete the article with id 1.

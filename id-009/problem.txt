@@ -1,0 +1,32 @@
+### Problem ID: 009 - Employee Management System (OOP)
+
+**Problem Description:**
+
+Create an Employee Management System where the data of various employees will be managed. This system needs to create a few classes using OOP, such as:
+
+1. **Employee Class:**
+ - The employee's name, designation, salary must be saved.
+ - There will be a method to display the employee information.
+ - There shall be a method for salary increment.
+
+2. **EmployeeManager Class:**
+ - To manage a list of employees (via array).
+ - There will be methods to add new employees.
+ - Have a method to find an employee (by name or title).
+ - There will be method to update salary of employees.
+ - There shall be method of termination of employees.
+
+**Instructions:**
+
+- Create two classes named `Employee` and `EmployeeManager`.
+- ``EmployeeManager`' class to store and manage employee data.
+- Create some functions for user interaction to add, search, update salary and remove employees.
+
+**Example:**
+- Adding new employee: `addEmployee($employee)`
+- find employee: `findEmployee($name)`
+- Updating employee salary: `updateSalary($name, $newSalary)`
+- Remove employee: `removeEmployee($name)`
+
+**Output:**
+Successfully adding, finding, updating or deleting an employee will display its response on the console.

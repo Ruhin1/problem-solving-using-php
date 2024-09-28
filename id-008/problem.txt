@@ -1,0 +1,43 @@
+**Problem ID: 008**
+**Subject: OOP (Object-Oriented Programming)**
+
+### Problem Description:
+You need to create a class named **"BankAccount"**. A customer can manage his bank account through this class. The class should contain the following features:
+
+1. **Properties (Attribute/Variables)**:
+ - `accountNumber` (bank account number)
+ - `accountHolder` (name of account holder)
+ - `balance` (current balance of the account)
+
+2. **Methods (Functions)**:
+ - `deposit(amount)` - This method will deposit a specified amount of money into the account.
+ - `withdraw(amount)` - This method will withdraw a specified amount from the account. But if the account balance is not sufficient, the withdrawal will not be possible and appropriate message will be displayed.
+ - `checkBalance()` - This method will show the current balance of the account.
+
+### Input and Output:
+1. Initially the account balance will be 0.
+2. Money can be deposited using `deposit(amount)` method.
+3. Withdraw(amount) method.
+4. Balance can be checked with `checkBalance()` method.
+
+### Example:
+```php
+$account = new BankAccount("123456", "John Doe");
+
+// Depositing money
+$account->deposit(5000);
+
+// Attempt to withdraw money
+$account->withdraw(2000);
+
+// Checking the balance
+echo $account->checkBalance(); // Output: 3000
+````
+
+### Challenge:
+- Data security must be maintained within the class (Encapsulation).
+- Account balance cannot be negative.
+
+---
+
+This is a basic example of a real life banking system. This will strengthen your OOP concept.

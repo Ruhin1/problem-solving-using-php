@@ -1,0 +1,48 @@
+**Problem ID: 005 - File Upload Management System**
+
+### Problem Description:
+Create a backend application where users can upload files to a specific folder. The uploaded file name, size, and upload date must be stored in the database.
+
+### Work:
+1. **Creating File Upload System**:
+ - The user will upload a file, and the file will be saved in the specified folder on the server.
+ - The file name, size, and upload date must be stored in the database during upload.
+
+2. **Changing File Name**:
+ - The file name will be changed automatically if there are files with the same name during file upload.
+
+### Input:
+- a file (any type)
+
+### Output:
+- If successfully uploaded, the file name, size, and upload date will be stored in the database and displayed in the response.
+
+### Example:
+**File Upload:**
+
+````
+POST /upload
+File: example.jpg
+````
+
+**Output:**
+```json
+{
+ "status": "success",
+ "message": "File uploaded successfully",
+ "data": {
+ "file_name": "example_1.jpg",
+ "size": "1.2MB",
+ "uploaded_at": "2024-09-24"
+ }
+}
+````
+
+### Instructions:
+- Database connection must be created using PDO.
+- PHP's `move_uploaded_file()` function should be used for file upload.
+- File size and name to be stored in database.
+
+---
+
+Solving this problem will increase efficiency on file management in the backend.
