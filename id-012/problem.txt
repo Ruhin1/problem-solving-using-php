@@ -1,0 +1,51 @@
+### Problem ID: 012 - Object-Oriented E-Commerce System
+
+**Problem Description:**
+
+A simple e-commerce system needs to be developed, where various products can be added, deleted and product prices can be updated. It uses some important object-oriented concepts such as classes, objects, inheritance, abstractions, interfaces and traits. Follow the steps below:
+
+1. **Product Class:**
+ - Create a `Product` class, which contains the product name, type, price, and stock.
+ - Product name, type and price must be set via constructor.
+ - There should be a method to update product price and stock.
+
+2. **Discount Interface:**
+ - Create a ``Discount'' interface that will contain the ``applyDiscount()'' method.
+ - Discount should be applied according to the price of the product.
+
+3. **DigitalProduct and PhysicalProduct Class:**
+ - Create two classes named `DigitalProduct` and `PhysicalProduct`, which inherit from the `Product` class.
+ - `DigitalProduct` and `PhysicalProduct` will follow different discount method.
+
+4. **ProductManager Class:**
+ - Create a `ProductManager` class, where products can be added, removed and list of products can be displayed.
+
+5. **Trait Usage:**
+ - A `Logger` trait must be created, where each product manipulation (eg adding, removing) will be logged.
+
+**Instructions:**
+- Solve problems using classes and interfaces.
+- Create logical test cases to verify that each function is working correctly.
+
+**Example output:**
+```php
+$product1 = new PhysicalProduct("Laptop", "Electronics", 50000);
+$product2 = new DigitalProduct("E-Book", "Books", 150);
+
+$productManager = new ProductManager();
+$productManager->addProduct($product1);
+$productManager->addProduct($product2);
+
+// Apply discount and update stock
+$product1->applyDiscount(10); // Physical Product gets 10% discount
+$product2->applyDiscount(5); // Digital Product gets 5% discount
+
+$productManager->showAllProducts();
+````
+
+---
+
+**Which Will Learn:**
+- How to create classes and objects.
+- Use of Inheritance, Abstraction, and Interfaces.
+- Trait and its real life application.

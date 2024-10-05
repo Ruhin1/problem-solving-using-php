@@ -1,0 +1,45 @@
+### Problem ID: 012 - Object-Oriented Inventory Management System
+
+You need to create a small inventory management system, where product stock and sales will be managed. There are some new OOP concepts to be used such as: inheritance, abstract classes, interfaces, and static methods and properties.
+
+#### **Problem Description:**
+
+1. **Abstract Class: `Product'**
+ - Create an abstract class named `Product`. It will contain general properties such as: product name, price and stock.
+ - This class will have an abstract method named `calculateTotalValue()`, which will calculate the total value based on the stock.
+
+2. **Classes: `PhysicalProduct` and `DigitalProduct`**
+ - Create a class named `PhysicalProduct` that inherits from the `Product` class and adds properties required for physical products (eg: weight, shipping cost).
+ - Create a class called `DigitalProduct` that inherits from the `Product` class, which will hold properties only applicable to digital products (eg: file size).
+
+3. **Interface: `Sellable'**
+ - Create a `Sellable` interface that contains a method named `sell()`. This method will manage product sales and reduce the specified amount of products from stock.
+
+4. **Class: `InventoryManager'**
+ - Create `InventoryManager` class which will track inventory of all products using static methods. It will contain a static property that will hold a list of all the products in the inventory.
+ - Create methods to add products and show inventory.
+
+#### **Your Task:**
+
+1. Create `Product`, `PhysicalProduct`, `DigitalProduct` classes.
+2. Manage product sales using the `Sellable` interface.
+3. Manage products using static methods and properties in `InventoryManager` class.
+
+#### **Features:**
+- Product stock management.
+- Showing total inventory value.
+- Managing sales and updating stock.
+
+#### **Example Output:**
+```php
+Physical Product: Laptop, Price: 1000, Stock: 50
+Digital Product: E-book, Price: 15, Stock: 1000
+Inventory Value: $50000 (Laptop) + $15000 (E-book) = $65000
+````
+
+#### **Comment:**
+- This is a real life problem that will help you build a complete system. Step by step various OOP concepts to be used here.
+
+---
+
+**Solve the problem and build the system.**

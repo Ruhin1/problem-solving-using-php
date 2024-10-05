@@ -1,0 +1,40 @@
+### Problem ID: 012 - Advanced PHP OOP: Inheritance, Abstract Classes, and Interfaces
+
+#### Problem Description:
+You need to create a **booking system** where different types of bookings will be handled. This will include flight booking, hotel booking, and car rental booking. Here we will learn the use of inheritance, abstract classes and interfaces.
+
+#### Specific needs:
+1. Create an **Abstract Class** named `Booking'. This class will contain two abstract methods:
+ - `calculatePrice()`: This method will calculate a separate price for each booking.
+ - `getBookingDetails()`: Returns the booking details.
+
+2. Create separate classes for each booking type:
+ - **FlightBooking**: which inherits from the `Booking` class and implements the `calculatePrice()` and `getBookingDetails()` methods.
+ - **HotelBooking**: will similarly inherit from `Booking` and implement its own `calculatePrice()` and `getBookingDetails()` methods.
+ - **CarRentalBooking**: This will likewise inherit from `Booking` and implement its own methods.
+
+3. Create an Interface named ``Discountable''. It will have a method:
+ - `applyDiscount(float $percentage)`: will apply the discount to each booking. Discounts can be given on flight and hotel bookings only.
+
+4. Create a **BookingManager** class, which will manage bookings (like adding, removing and showing booking details).
+
+### Example:
+- In case of **FlightBooking**, the price will be determined according to the distance traveled and the number of passengers.
+- In case of **HotelBooking**, pricing will be based on number of nights and price per night.
+- In case of **CarRentalBooking**, pricing will be based on number of days and daily rate.
+
+### Demand:
+1. Use of Inheritance.
+2. Abstract class and method implementation.
+3. Interface Implementation.
+4. Discount method will be implemented on ``FlightBooking'' and ``HotelBooking'' only.
+
+#### Input:
+You need to create different bookings, set their prices, and apply discounts to them (if any).
+
+#### Output:
+Details of each booking will be shown, and the new price will be shown if a discount has been applied.
+
+---
+
+By solving it you will have a good grasp of Inheritance, Abstract Class, and Interface concepts of PHP OOP.

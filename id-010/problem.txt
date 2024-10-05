@@ -1,0 +1,34 @@
+Problem ID: 010 - Employee Payroll System
+
+**Problem Description:**
+
+Create an **Employee Payroll System** where employee salaries will be calculated and managed. In this problem you have to implement various features like adding employees, calculating monthly salary, adding bonus according to overtime and reviewing employee salary.
+
+### Required Features:
+1. **Employee Class:**
+ - Private variables: `name`, `designation`, `baseSalary`, `hoursWorked`.
+ - Method:
+ - `__construct()`: will set `name`, `designation` and `baseSalary`.
+ - `logHours()`: will log the employee's working hours.
+ - `calculateBonus()`: will calculate bonus based on additional work (say, 10% bonus for every hour over 40 hours).
+ - `getMonthlySalary()`: will return the total salary including bonus.
+
+2. **PayrollManager class:**
+ - private variable: `employees` (list of employees).
+ - Method:
+ - `addEmployee()`: will add new employee.
+ - `processPayroll()`: will process all employee salaries and bonuses.
+ - `displayPayroll()`: will display all employees name, title and total monthly salary.
+
+### Example:
+
+1. Add an employee using the `Employee` class and log their working hours.
+2. Process and print the salaries of all employees using the `PayrollManager` class.
+
+This is similar to a real-life problem where employees' salaries are processed in large organizations.
+
+**Instructions:**
+- You can use `array` or `object` to store data in your program.
+- Test to verify that the code is working correctly.
+
+Through this problem you will get an opportunity to work on various topics of PHP OOP like Inheritance, Encapsulation and Polymorphism.

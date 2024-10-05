@@ -1,0 +1,36 @@
+Problem ID: 011 - Advanced PHP OOP: Classes, Objects, and Access Modifiers
+
+**Problem Description:**
+A restaurant management system needs to be developed, where there will be different types of employees (eg managers, waiters). Each employee will have a name, designation, and salary.
+
+Here are some conditions to follow:
+1. Create an `Employee` class for each employee.
+2. Keep `name`, `designation`, and `salary` as `private` properties inside the class.
+3. Create a constructor, which will set `name`, `designation`, and `salary`.
+4. Create a public method `getDetails()`, which will return all the employee data.
+5. Create a method `updateSalary()`, which will update the salary.
+6. Create a subclass named `Manager`, which inherits from the `Employee` class and has an additional method `assignTask()`.
+
+**Your task:**
+1. Create `Employee` and `Manager` classes.
+2. Use constructors and necessary access modifiers for classes.
+3. Add additional methods to the `Manager` class.
+4. Create multiple `Employee` and `Manager` objects, expose their data and methods.
+
+**Input example:**
+```php
+$employee1 = new Employee("Rahim", "Waiter", 15000);
+$manager1 = new Manager("Karim", "Manager", 30000);
+
+$employee1->updateSalary(17000);
+$manager1->assignTask("Prepare report for this month.");
+```
+
+**Example output:**
+```
+Employee: Rahim, Designation: Waiter, Salary: 17000
+Manager: Karim, Designation: Manager, Salary: 30000
+Assigned Task: Prepare report for this month.
+```
+
+Solving this problem will give you a deeper understanding of PHP classes, objects, access modifiers, and inheritance.
